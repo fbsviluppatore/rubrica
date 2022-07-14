@@ -1,0 +1,9 @@
+<form [formGroup]="chatForm" (ngSubmit)="onSubmit()" class="flex item-center">
+  <div class="field flex item-center space-between">
+    <input type="textarea" class="input" placeholder="Scrivi qui il messaggio" formControlName="messaggio">
+    <div>
+      <button type="submit"><i class="fa-solid fa-share"></i></button>
+    </div>
+  </div>
+
+</form>

@@ -1,0 +1,9 @@
+<section class="section-direct">
+  <div class="message-main">
+    <app-chat-list [singleDirect]="singleDirect" [idDestinatario]="idDestinatario" [ultimoDirect]="ultimoDirect"></app-chat-list>
+  </div>
+  <div class="message-send">
+    <app-chat-form [isSingleDirect]="isSingleDirect" (lastMessage)="lastMessage($event)"></app-chat-form>
+  </div>
+</section>
+

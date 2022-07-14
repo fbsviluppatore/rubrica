@@ -1,0 +1,8 @@
+<section class="section-chat">
+    <app-chat-list class="message-main" [messaggio]="ultimoMessaggio"></app-chat-list>
+
+    <app-chat-form class="message-send" (lastMessage)="lastMessage($event)"></app-chat-form>
+
+    <app-list-logged class="logged-user"></app-list-logged>
+</section>
+
